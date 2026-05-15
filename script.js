@@ -81,6 +81,14 @@ document.addEventListener("DOMContentLoaded", () => {
   todoListEl = document.querySelector("#todoList");
   todoCountEl = document.querySelector("#todoCount");
   todoEmptyEl = document.querySelector("#todo-empty");
+  const dateEl = document.querySelector("#current-date");
+
+  // 오늘 날짜 표시
+  if (dateEl) {
+    const now = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
+    dateEl.textContent = now.toLocaleDateString('ko-KR', options);
+  }
   const form = todoInput?.form;
 
   if (!todoInput || !addButton || !todoListEl || !todoCountEl || !todoEmptyEl || !form) {
