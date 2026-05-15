@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>할 일 목록</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -35,7 +38,10 @@
       >
         <h2 id="todo-list-title" class="todo-list-title">내 할 일</h2>
         <div id="todoList" class="todo-list" aria-live="polite"></div>
-        <p id="todo-empty" class="todo-empty">등록된 할 일이 없습니다.</p>
+        <div id="todo-empty" class="todo-empty">
+          <p>🌟 아직 등록된 할 일이 없습니다.</p>
+          <small>오늘의 주인공은 당신입니다! 새로운 할 일을 추가해 보세요.</small>
+        </div>
       </section>
 
       <footer class="app-status" aria-label="할 일 상태">
